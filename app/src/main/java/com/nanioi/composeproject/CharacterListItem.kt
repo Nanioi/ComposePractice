@@ -21,13 +21,15 @@ import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
 
 @Composable
-fun CharacterListItem(character: Character) {
+fun CharacterListItem(character: Character, clickToCharacter : (Character) -> Unit) {
     Card(
         modifier = Modifier.padding(horizontal = 8.dp, vertical = 8.dp).fillMaxWidth(),
         elevation = 2.dp,
         shape = RoundedCornerShape(corner = CornerSize(16.dp))
     ) {
-        Row{
+        Row(
+            Modifier.clickable { clickToCharacter(character) }
+        ){
             characterImage(character)
             Column(
                 modifier = Modifier

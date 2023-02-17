@@ -1,5 +1,7 @@
 package com.nanioi.composeproject
 
+import android.content.ClipData.newIntent
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -23,7 +25,9 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    MyApp()
+                    MyApp{
+                        startActivity(CharacterInfoActivity.newIntent(this,it))
+                    }
                 }
             }
         }
@@ -31,10 +35,10 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun MyApp(){
+fun MyApp(clickToCharacter : (Character) -> Unit){
     Scaffold(
         content = {
-            HomeContent()
+            HomeContent(clickToCharacter = clickToCharacter)
         }
     )
 }

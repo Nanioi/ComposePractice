@@ -9,7 +9,7 @@ import androidx.compose.foundation.lazy.items
 import com.nanioi.composeproject.DataProvider.characterList
 
 @Composable
-fun HomeContent() {
+fun HomeContent(clickToCharacter: (Character) -> Unit) {
     val character = remember{ characterList }
 
     //compose recyclerview
@@ -19,7 +19,7 @@ fun HomeContent() {
         items(
             items = character,
             itemContent = {
-                CharacterListItem(character = it)
+                CharacterListItem(character = it,clickToCharacter)
             })
     }
 }
