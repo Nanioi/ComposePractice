@@ -29,8 +29,8 @@ class CharacterInfoActivity : ComponentActivity() {
         setContent {
             ComposeProjectTheme {
                 // A surface container using the 'background' color from the theme
-                //CharacterInfo(character = character)
-                Text(text = "Hello ${character.title}")
+                CharacterInfoScreen(character = character)
+                //Text(text = "Hello ${character.title}")
             }
         }
     }
