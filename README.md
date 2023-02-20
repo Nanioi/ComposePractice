@@ -1,7 +1,7 @@
 # ComposePractice
 Practice Jetpack Compose
 
-완성화면
+완성화면 ( iptv화면 )
 
 <img src="https://user-images.githubusercontent.com/52556870/220002170-27a85d07-b949-4e4b-bc6c-aa52ff4a198a.mp4">
 
