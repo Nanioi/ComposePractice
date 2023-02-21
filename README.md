@@ -6,7 +6,7 @@ Practice Jetpack Compose
 ##### 가로화면 (iptv / mobile용)
 
 - 영상
-<img width="60%" src="https://user-images.githubusercontent.com/52556870/220002170-27a85d07-b949-4e4b-bc6c-aa52ff4a198a.mp4">
+<img width="40%" src="https://user-images.githubusercontent.com/52556870/220002170-27a85d07-b949-4e4b-bc6c-aa52ff4a198a.mp4">
 
 
 - 캡처본 
