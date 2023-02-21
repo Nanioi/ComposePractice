@@ -2,6 +2,7 @@ package com.nanioi.composeproject
 
 import android.content.Context
 import android.content.Intent
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -28,9 +29,24 @@ class CharacterInfoActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             ComposeProjectTheme {
-                // A surface container using the 'background' color from the theme
-                CharacterMobileScreen(character = character)
-                //Text(text = "Hello ${character.title}")
+                if (resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
+                    CharacterMobileScreen(character = character)
+                } else {
+                    CharacterInfoScreen(character = character)
+                }
+            }
+        }
+    }
+
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        super.onConfigurationChanged(newConfig)
+        setContent {
+            ComposeProjectTheme {
+                if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
+                    CharacterMobileScreen(character = character)
+                } else {
+                    CharacterInfoScreen(character = character)
+                }
             }
         }
     }

@@ -105,12 +105,12 @@ fun CharacterDescription(label: String, value: String, containerWidth: Dp) {
     Row(modifier = Modifier.padding(start = 16.dp, end = 16.dp, bottom = 16.dp)) {
         Text(
             text = label,
-            modifier = Modifier.widthIn(containerWidth/6),
+            modifier = Modifier.widthIn(containerWidth/5),
             style = MaterialTheme.typography.caption,
         )
         Text(
             text = value,
-            modifier = Modifier.width(containerWidth - containerWidth/6),
+            modifier = Modifier.width(containerWidth - containerWidth/5),
             style = MaterialTheme.typography.body1,
             overflow = TextOverflow.Visible
         )
