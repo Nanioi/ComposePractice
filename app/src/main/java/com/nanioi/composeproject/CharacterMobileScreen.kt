@@ -4,12 +4,15 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.aspectRatio
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CornerSize
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -46,25 +49,6 @@ fun CharacterMobileScreen(character: Character) {
                         .fillMaxSize()
                         .verticalScroll(scrollState),
                 ) {
-                    ProfileScreen(character)
-                }
-            }
-        }
-    }
-}
-
-@Composable
-fun ProfileScreen( character: Character) {
-    val scrollState = rememberScrollState()
-
-    Column(modifier = Modifier.fillMaxSize()) {
-        BoxWithConstraints {
-            Surface {
-                Column(
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .verticalScroll(scrollState),
-                ) {
                     ProfileHeader(
                         character,
                         this@BoxWithConstraints.maxHeight
@@ -83,11 +67,11 @@ private fun ProfileHeader(
 ) {
     Image(
         modifier = Modifier
-            .heightIn(max = containerHeight / 2)
-            .fillMaxWidth(),
+            .fillMaxWidth()
+            .heightIn(containerHeight/2),
         painter = rememberAsyncImagePainter(character.imageUrl),
         contentDescription = null,
-        contentScale = ContentScale.Crop
+        contentScale = ContentScale.Inside
     )
 }
 
