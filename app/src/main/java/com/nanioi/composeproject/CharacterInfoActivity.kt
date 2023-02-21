@@ -29,7 +29,7 @@ class CharacterInfoActivity : ComponentActivity() {
         setContent {
             ComposeProjectTheme {
                 // A surface container using the 'background' color from the theme
-                CharacterInfoScreen(character = character)
+                CharacterMobileScreen(character = character)
                 //Text(text = "Hello ${character.title}")
             }
         }
