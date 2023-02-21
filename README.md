@@ -27,8 +27,8 @@ Practice Jetpack Compose
 - 캡처본
 
 <p float="left">
-<img src = "https://user-images.githubusercontent.com/52556870/220245199-0a3a94cd-5214-4422-8cf0-9da30e2819c3.png" width="30%">
-<img src = "https://user-images.githubusercontent.com/52556870/220245211-f3c110c0-1301-4bc2-9560-d186b98b79ea.png" width="30%">
+<img src = "https://user-images.githubusercontent.com/52556870/220245199-0a3a94cd-5214-4422-8cf0-9da30e2819c3.png" width="300">
+<img src = "https://user-images.githubusercontent.com/52556870/220245211-f3c110c0-1301-4bc2-9560-d186b98b79ea.png" width="300">
 </p>
 
 
