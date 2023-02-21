@@ -1,27 +1,28 @@
 # ComposePractice
 Practice Jetpack Compose
 
-완성화면 
+## 완성화면 
 
 ### iptv화면
 
 - 영상
 <img width="500" src="https://user-images.githubusercontent.com/52556870/220002170-27a85d07-b949-4e4b-bc6c-aa52ff4a198a.mp4">
 
+
 - 캡처본 
-    1. compose recyclerview
 
-<img width="500" src="https://user-images.githubusercontent.com/52556870/220002151-a9ee3cec-0451-45c0-9bb1-f2b37cdee61e.png">
+<p float="left">
+<img width="400" src="https://user-images.githubusercontent.com/52556870/220002151-a9ee3cec-0451-45c0-9bb1-f2b37cdee61e.png">
+<img width="400" src="https://user-images.githubusercontent.com/52556870/220002163-a12bc01b-6c39-4f51-a117-c51e6d952f4a.png">
+</p>
 
-    2. info screen
-
-<img width="500" src="https://user-images.githubusercontent.com/52556870/220002163-a12bc01b-6c39-4f51-a117-c51e6d952f4a.png">
 
 ### mobile용 화면
 
 - 영상
 
 <img src = "https://user-images.githubusercontent.com/52556870/220245709-02a6a8c6-875f-45ac-9ecf-0e3538ea8bdb.mp4" width="250">
+
 
 - 캡처본
 
